@@ -1,0 +1,19 @@
+<template>
+  <div class="layout">
+    <LayoutHeader />
+    <main class="main">
+      <slot />
+    </main>
+    <LayoutFooter />
+  </div>
+</template>
+
+<style lang="postcss" scoped>
+.layout {
+  @apply flex flex-col min-h-screen;
+
+  .main {
+    @apply flex flex-1;
+  }
+}
+</style>

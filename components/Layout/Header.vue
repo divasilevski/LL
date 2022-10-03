@@ -1,0 +1,12 @@
+<template>
+  <header>
+    <ul class="flex items-center justify-between flex-wrap bg-orange-400 p-6">
+      <li class="mr-6">
+        <a href="/">главная</a>
+      </li>
+      <li class="mr-6">
+        <a href="/lk">лк</a>
+      </li>
+    </ul>
+  </header>
+</template>
