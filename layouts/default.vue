@@ -10,10 +10,10 @@
 
 <style lang="postcss" scoped>
 .layout {
-  @apply flex flex-col min-h-screen;
+  @apply flex flex-col min-h-screen bg-background text-secondary;
 
   .main {
-    @apply flex flex-1;
+    @apply flex flex-1 app-container;
   }
 }
 </style>

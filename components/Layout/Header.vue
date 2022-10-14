@@ -1,12 +1,18 @@
 <template>
-  <header>
-    <ul class="flex items-center justify-between flex-wrap bg-orange-400 p-6">
-      <li class="mr-6">
-        <a href="/">главная</a>
-      </li>
-      <li class="mr-6">
-        <a href="/lk">лк</a>
-      </li>
-    </ul>
+  <header class="header">
+    <div class="header__container">
+      <LayoutLogo />
+      <LayoutNavigation />
+    </div>
   </header>
 </template>
+
+<style lang="postcss" scoped>
+.header {
+  @apply flex items-center h-20 bg-surface;
+
+  .header__container {
+    @apply flex justify-between app-container;
+  }
+}
+</style>
