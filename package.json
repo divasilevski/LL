@@ -9,6 +9,10 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "@types/accept-language-parser": "^1.5.3",
     "nuxt": "3.0.0-rc.11"
+  },
+  "dependencies": {
+    "accept-language-parser": "^1.5.0"
   }
 }

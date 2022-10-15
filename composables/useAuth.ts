@@ -5,7 +5,7 @@ export default function () {
   const user = useUserState()
   const { clearUserToken } = useUserToken()
 
-  const initUserAsync = async () => {
+  const loadUserAsync = async () => {
     const { data } = await useApiFetch<User>(Api.GetMe)
 
     user.value = data.value
@@ -15,17 +15,17 @@ export default function () {
     }
   }
 
-  const loginUserAsync = async () => {}
-
   const registerUserAsync = async () => {}
+
+  const loginUserAsync = async () => {}
 
   const logoutUserAsync = async () => {}
 
   return {
-    user,
-    initUserAsync,
-    loginUserAsync,
     registerUserAsync,
     logoutUserAsync,
+    loginUserAsync,
+    loadUserAsync,
+    user,
   }
 }

@@ -1,4 +1,4 @@
 export const routes = [
-  { name: 'Разборы', to: 'sentences' },
-  { name: 'Источники', to: 'sources' },
+  { tname: '@sentences', to: 'sentences' },
+  { tname: '@sources', to: 'sources' },
 ]

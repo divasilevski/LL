@@ -1,12 +1,13 @@
 <script setup>
 import { routes } from '@/config/navigation'
+const { translate } = useLocale()
 </script>
 
 <template>
   <nav>
     <ul class="navigation">
       <li v-for="route in routes" :key="route.to" class="navigation__item">
-        <NuxtLink :to="route.to">{{ route.name }}</NuxtLink>
+        <NuxtLink :to="route.to">{{ translate(route.tname) }}</NuxtLink>
       </li>
     </ul>
   </nav>
@@ -17,7 +18,7 @@ import { routes } from '@/config/navigation'
   @apply flex;
 
   .navigation__item {
-    @apply px-2;
+    @apply capitalize px-2;
   }
 }
 </style>

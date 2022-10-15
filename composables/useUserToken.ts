@@ -2,7 +2,7 @@ export default function () {
   const userToken = useUserTokenState()
   const cookieToken = useCookie<string | null>('api_token')
 
-  const initUserToken = () => {
+  const loadUserToken = () => {
     if (cookieToken.value) {
       userToken.value = 'Token ' + cookieToken.value
     }
@@ -18,5 +18,5 @@ export default function () {
     cookieToken.value = null
   }
 
-  return { userToken, initUserToken, setUserToken, clearUserToken }
+  return { userToken, loadUserToken, setUserToken, clearUserToken }
 }

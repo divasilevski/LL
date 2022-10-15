@@ -1,10 +1,12 @@
 <script lang="ts" setup>
-const { initUserToken } = useUserToken()
-const { initUserAsync } = useAuth()
+const { loadUserAsync } = useAuth()
+const { loadUserToken } = useUserToken()
+const { loadDictionaryAsync } = useLocale()
 
 useAsyncData(async () => {
-  initUserToken()
-  await Promise.all([initUserAsync()])
+  loadUserToken()
+
+  await Promise.all([loadUserAsync(), loadDictionaryAsync()])
 })
 </script>
 
