@@ -1,5 +1,6 @@
 <script setup>
 import { routes } from '@/config/navigation'
+
 const { translate } = useLocale()
 </script>
 
@@ -9,6 +10,7 @@ const { translate } = useLocale()
       <li v-for="route in routes" :key="route.to" class="navigation__item">
         <NuxtLink :to="route.to">{{ translate(route.tname) }}</NuxtLink>
       </li>
+      <LayoutUserMenu />
     </ul>
   </nav>
 </template>

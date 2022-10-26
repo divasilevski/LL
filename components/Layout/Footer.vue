@@ -5,7 +5,7 @@
         <a href="/">главная</a>
       </li>
       <li class="mr-6">
-        <a href="/lk">лк</a>
+        <a href="/profile">лк</a>
       </li>
     </ul>
   </footer>
