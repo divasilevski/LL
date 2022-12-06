@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import IconProfile from '@/assets/svg/profile.svg'
 </script>
 
 <template>
   <div class="user-menu">
     <NuxtLink to="/profile">
-      <IconProfile />
+      <IconProfile class="w-6 h-6" />
     </NuxtLink>
   </div>
 </template>

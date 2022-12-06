@@ -15,3 +15,10 @@ useAsyncData(async () => {
     <NuxtPage />
   </NuxtLayout>
 </template>
+
+<style lang="postcss">
+* {
+  font-family: 'Inter';
+  @apply tracking-wide;
+}
+</style>
