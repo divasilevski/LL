@@ -7,6 +7,8 @@ useAsyncData(async () => {
   loadUserToken()
 
   await Promise.all([loadUserAsync(), loadDictionaryAsync()])
+
+  return true
 })
 </script>
 
