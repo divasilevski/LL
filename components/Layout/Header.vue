@@ -1,18 +1,20 @@
+<script lang="ts" setup>
+const route = useRoute()
+const computedSticky = computed(() => route.name !== 'index')
+</script>
+
+
 <template>
-  <header class="header">
-    <div class="header__container">
+  <UIHeader :sticky="computedSticky">
+    <div class="toolbar">
       <LayoutLogo />
       <LayoutNavigation />
     </div>
-  </header>
+  </UIHeader>
 </template>
 
 <style lang="postcss" scoped>
-.header {
-  @apply flex items-center h-20 bg-surface;
-
-  .header__container {
-    @apply flex justify-between app-container;
-  }
+.toolbar {
+  @apply flex justify-between app-container text-primary;
 }
 </style>
