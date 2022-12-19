@@ -3,10 +3,11 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
     colors: {
-      primary: '#4F646F',
-      secondary: '#000000',
-      background: '#F4FAFF',
-      surface: '#DEE7E7',
+      primary: '#6E7B8D',
+      secondary: '#E1E5E8',
+      background: '#FFFFFF',
+      surface: '#F9F9F9',
+      
       accent: '#B7ADCF',
       error: '#D32F2F',
     },
