@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconLoader from '../assets/svg/loader.svg'
+import IconLoader from '../../assets/svg/loader.svg'
 
 const props = defineProps({
   to: {

@@ -2,6 +2,12 @@
 import IconProfile from '@/assets/svg/profile.svg'
 const isShow = ref(true)
 
+const inputValue = ref('value123')
+
+const clearValue = () => {
+  inputValue.value = ''
+}
+
 const toggle = () => {
   isShow.value = !isShow.value
 }
@@ -37,5 +43,12 @@ const toggle = () => {
         <IconProfile class="w-6 h-6" />
       </div>
     </UIButton>
+
+    <div>{{ '&nbsp;' }}</div>
+    <UIInput placeholder="Search..." />
+
+    <div>{{ '&nbsp;' }}</div>
+    <UIInput v-model:value="inputValue" />
+    <UIButton @click="clearValue">{{ inputValue }}</UIButton>
   </article>
 </template>
