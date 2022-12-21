@@ -20,7 +20,7 @@ const classComputed = computed(() => ({
 
 <style lang="postcss" scoped>
 .header {
-  @apply absolute left-0 right-0 flex items-center h-16 bg-background z-40 md:h-20;
+  @apply absolute left-0 right-0 flex items-center h-16 bg-background z-30 md:h-20;
 }
 
 .header--sticky {
