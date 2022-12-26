@@ -5,6 +5,6 @@ const user = useUserState()
 <template>
   <article>
     Главная страница
-    <pre>{{ user }}</pre>
+    <pre>{{ user.email }}</pre>
   </article>
 </template>
