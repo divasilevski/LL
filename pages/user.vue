@@ -1,3 +1,3 @@
 <template>
-  <article>Пользователь</article>
+  <NuxtPage />
 </template>
