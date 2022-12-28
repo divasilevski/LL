@@ -13,12 +13,19 @@ module.exports = {
 
     extend: {
       animation: {
-        fade: 'fade 0.3s ease-in-out',
+        overlayIn: 'overlay 0.3s ease-in-out',
+        overlayOut: 'overlay 0.3s ease-in-out reverse',
+        drawerIn: 'drawer 0.3s ease-in-out',
+        drawerOut: 'drawer 0.3s ease-in-out reverse',
       },
       keyframes: (theme) => ({
-        fade: {
+        overlay: {
           '0%': { opacity: theme('opacity.0') },
-          '100%': { opacity: theme('opacity.100') },
+          '100%': { opacity: theme('opacity.60') },
+        },
+        drawer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       }),
     },
