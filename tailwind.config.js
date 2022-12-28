@@ -7,7 +7,7 @@ module.exports = {
       secondary: '#E1E5E8',
       background: '#FFFFFF',
       surface: '#F9F9F9',
-      
+
       accent: '#B7ADCF',
       error: '#D32F2F',
     },
@@ -26,8 +26,8 @@ module.exports = {
       addComponents({
         '.app-container': {
           margin: theme('margin.auto'),
-          paddingLeft: theme('padding.7'),
-          paddingRight: theme('padding.7'),
+          paddingLeft: theme('padding.5'),
+          paddingRight: theme('padding.5'),
           maxWidth: theme('maxWidth.7xl'),
           width: theme('width.full'),
         },

@@ -1,18 +1,10 @@
 <script lang="ts" setup>
-import IconHome from '@/assets/svg/home.svg'
-import IconHistory from '@/assets/svg/history.svg'
-import IconUser from '@/assets/svg/user.svg'
-
-const tabs = [
-  { name: 'home', icon: IconHome, to: '/sources' },
-  { name: 'history', icon: IconHistory, to: '/history' },
-  { name: 'user', icon: IconUser, to: '/user' },
-]
+const { tabs, hasTabBar } = useAppNavigation() 
 </script>
 
 <template>
-  <UITabBar>
-    <UIButtonIcon v-for="tab in tabs" :key="tab.name" :to="tab.to">
+  <UITabBar v-if="hasTabBar">
+    <UIButtonIcon v-for="tab in tabs" :key="tab.name" :to="tab.name">
       <component :is="tab.icon" />
     </UIButtonIcon>
   </UITabBar>
