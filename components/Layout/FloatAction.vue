@@ -15,7 +15,7 @@ const { pageAction } = useAppNavigation()
   @apply fixed inset-x-0 bottom-0 app-container;
 
   .fab {
-    @apply absolute bottom-8 right-4 p-4 bg-background rounded-full shadow-md;
+    @apply absolute bottom-12 right-4 p-4 bg-background rounded-full shadow-md;
     @apply hidden md:flex items-center justify-center hover:rotate-6;
   }
 }
