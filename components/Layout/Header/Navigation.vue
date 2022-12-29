@@ -20,11 +20,11 @@ const { tabs, hasTabBar } = useAppNavigation()
   .navigation__items {
     @apply items-center gap-1 hidden md:flex;
 
-    a {
-      @apply opacity-30;
+    svg {
+      @apply opacity-50;
     }
 
-    .router-link-active {
+    .router-link-active svg {
       @apply opacity-100;
     }
   }
