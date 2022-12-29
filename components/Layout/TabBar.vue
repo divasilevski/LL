@@ -13,7 +13,7 @@ const { tabs, hasTabBar } = useAppNavigation()
 <style lang="postcss" scoped>
 .tabbar {
   @apply fixed inset-x-0 bottom-0 flex justify-evenly items-center h-12 bg-background;
-  @apply md:hidden shadow-[0_4px_10px_rgba(0,0,0,0.2)];
+  @apply md:hidden shadow-[0_4px_10px_rgba(0,0,0,0.2)] z-30;
 
   a {
     @apply opacity-30;

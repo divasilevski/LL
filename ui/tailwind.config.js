@@ -1,4 +1,7 @@
 module.exports = {
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     colors: {
       background: '#FFFFFF',

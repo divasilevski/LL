@@ -36,7 +36,7 @@ const tagComputed = computed(() => (props.to ? defineNuxtLink({}) : 'button'))
 <style lang="postcss" scoped>
 .button-icon {
   @apply relative p-2 font-medium rounded-full cursor-pointer select-none;
-  @apply after:absolute hover:after:scale-100;
+  @apply after:absolute hover:after:scale-100 active:after:scale-100;
 }
 
 .button-icon::after {
