@@ -3,16 +3,17 @@ const { tabs, hasTabBar } = useAppNavigation()
 </script>
 
 <template>
-  <UITabBar v-if="hasTabBar" class="tabbar">
+  <nav v-if="hasTabBar" class="tabbar">
     <UIButtonIcon v-for="tab in tabs" :key="tab.name" :to="tab.name">
       <component :is="tab.icon" />
     </UIButtonIcon>
-  </UITabBar>
+  </nav>
 </template>
 
 <style lang="postcss" scoped>
 .tabbar {
-  @apply md:hidden;
+  @apply fixed inset-x-0 bottom-0 flex justify-evenly items-center h-12 bg-background;
+  @apply md:hidden shadow-[0_4px_10px_rgba(0,0,0,0.2)];
 
   a {
     @apply opacity-30;

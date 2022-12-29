@@ -11,10 +11,10 @@ const { headerTitle } = useAppNavigation()
 
 <style lang="postcss" scoped>
 .logo {
-  @apply relative m-2 flex flex-col items-center;
+  @apply relative mx-2 flex flex-col items-center;
 
   .logo__text {
-    @apply text-xl font-medium md:text-2xl;
+    @apply text-xl font-medium;
   }
 
   .logo__title {

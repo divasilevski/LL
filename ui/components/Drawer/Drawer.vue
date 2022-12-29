@@ -9,14 +9,14 @@ const props = defineProps({
 
 <template>
   <Transition :duration="250">
-    <div v-if="props.visible" class="drawer" @click.native="$emit('close')">
+    <aside v-if="props.visible" class="drawer" @click.native="$emit('close')">
       <div class="drawer__overlay" />
       <div class="drawer__body" @click.self.stop>
         <div class="drawer__content" @click.self.stop>
           <slot />
         </div>
       </div>
-    </div>
+    </aside>
   </Transition>
 </template>
 

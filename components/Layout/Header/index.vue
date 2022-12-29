@@ -7,7 +7,7 @@ const { isStickyHeader } = useAppNavigation()
     <div class="toolbar">
       <LayoutHeaderDrawer class="toolbar__left" />
       <LayoutHeaderTitle class="toolbar__center" />
-      <LayoutHeaderAction class="toolbar__right" />
+      <LayoutHeaderNavigation class="toolbar__right" />
     </div>
   </UIHeader>
 </template>
@@ -23,11 +23,10 @@ const { isStickyHeader } = useAppNavigation()
 
   .toolbar__center {
     @apply justify-self-center;
-    
   }
 
   .toolbar__right {
-    @apply justify-self-end md:hidden;
+    @apply justify-self-end;
   }
 }
 </style>
