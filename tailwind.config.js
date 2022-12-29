@@ -28,7 +28,7 @@ module.exports = {
           margin: theme('margin.auto'),
           paddingLeft: theme('padding.5'),
           paddingRight: theme('padding.5'),
-          maxWidth: theme('maxWidth.7xl'),
+          maxWidth: theme('maxWidth.4xl'),
           width: theme('width.full'),
         },
       })
