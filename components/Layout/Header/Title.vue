@@ -1,9 +1,11 @@
 <script lang="ts" setup>
+import { PagePath } from '@/config/navigation'
+
 const { headerTitle } = useAppNavigation()
 </script>
 
 <template>
-  <NuxtLink class="logo" to="/">
+  <NuxtLink class="logo" :to="PagePath.Index">
     <span class="logo__text">FOLYOD</span>
     <span v-if="headerTitle" class="logo__title">{{ headerTitle }}</span>
   </NuxtLink>

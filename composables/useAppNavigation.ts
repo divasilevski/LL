@@ -1,4 +1,4 @@
-import { PagePath } from '@/types/navigation'
+import { PagePath } from '@/config/navigation'
 
 import IconHistory from '@/assets/svg/history.svg'
 import IconHome from '@/assets/svg/home.svg'
