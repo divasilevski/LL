@@ -1,9 +1,11 @@
 import { Api } from '@/config/api'
-import { User } from '@/types/user'
+import { PagePath } from '@/config/navigation'
+import { LoginData, User } from '@/types/user'
 
 export default function () {
   const user = useUserState()
-  const { clearUserToken } = useUserToken()
+  const router = useRouter()
+  const { clearUserToken, setUserToken } = useUserToken()
 
   const loadUserAsync = async () => {
     const { data } = await useApiFetch<User>(Api.GetMe)
@@ -17,7 +19,19 @@ export default function () {
 
   const registerUserAsync = async () => {}
 
-  const loginUserAsync = async () => {}
+  const loginUserAsync = (loginData: LoginData) => {
+    return useApiFetch(Api.PostLogin, {
+      method: 'POST',
+      body: loginData,
+      immediate: false,
+      onResponse({ response }) {
+        const { token } = response._data
+        if (token) setUserToken(token)
+        router.push(PagePath.Home)
+        return response._data
+      },
+    })
+  }
 
   const logoutUserAsync = async () => {}
 

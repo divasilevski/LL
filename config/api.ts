@@ -1,4 +1,6 @@
 export enum Api {
   GetMe = '/api/auth/me',
-  Dictionary = '/api/dictionary',
+  PostLogin = '/api/auth/login',
+  PostRegister = '/api/auth/register',
+  GetDictionary = '/api/dictionary',
 }

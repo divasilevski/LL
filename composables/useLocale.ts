@@ -17,7 +17,7 @@ export default function () {
     if (!localeCode) localeCode = getBrowserLocale()
 
     const options = { params: { locale: localeCode } }
-    const { data } = await useApiFetch<Dictionary>(Api.Dictionary, options)
+    const { data } = await useApiFetch<Dictionary>(Api.GetDictionary, options)
 
     dictionary.value = data.value
     locale.value = localeCode
