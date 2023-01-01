@@ -9,6 +9,7 @@ const toggleDrawer = () => (isDrawer.value = !isDrawer.value)
   <div>
     <LazyUIDrawer :visible="isDrawer" @close="toggleDrawer">
       <NuxtLink to="/history/ui">UI</NuxtLink>
+      <NuxtLink to="/auth">Auth</NuxtLink>
     </LazyUIDrawer>
 
     <UIButtonIcon @click="toggleDrawer">
