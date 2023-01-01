@@ -1,4 +1,4 @@
 export enum Api {
-  GetMe = 'https://jsonplaceholder.typicode.com/users/1',
+  GetMe = '/api/auth/me',
   Dictionary = '/api/dictionary',
 }
